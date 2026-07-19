@@ -1,5 +1,7 @@
 # CroydonMainstreet
 
+![Website Preview](./screenshot.png)
+
 A high-performance, responsive barber shop website for "The Barber Master" in Croydon. Built to showcase 25 years of barbering tradition with modern web standards.
 
 ## Features
@@ -15,4 +17,4 @@ A high-performance, responsive barber shop website for "The Barber Master" in Cr
 - **Cloudinary**: CDN for optimized image delivery.
 
 ## Deployment
-Deployed via Vercel. Link[]
+Deployed via Vercel. Link[https://croydon-mainstreet.vercel.app/]
