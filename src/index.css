@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-barber-black: #1A1A1A;
+  --color-barber-gold: #C5A059;
+  --color-barber-charcoal: #2D2D2D;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
