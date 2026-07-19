@@ -1,6 +1,6 @@
 # CroydonMainstreet
 
-![Website Preview](./screenshot.png)
+![Website Preview](./src/assets/website-preview.png)
 
 A high-performance, responsive barber shop website for "The Barber Master" in Croydon. Built to showcase 25 years of barbering tradition with modern web standards.
 
