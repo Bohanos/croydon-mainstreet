@@ -14,20 +14,13 @@ export default function App() {
 
   return (
     <main>
-      <Navbar />
-      
-      {/* Pass the toggle function to the Hero component */}
+      <Navbar onBookClick={() => setIsBookingOpen(true)} />
       <Hero onBookClick={() => setIsBookingOpen(true)} />
-      
       <CraftsmanPromise />
-      
       <ServicesGrid onBookClick={() => setIsBookingOpen(true)} />
-      
-      {/* Conditionally render the BookingSection */}
       {isBookingOpen && (
         <BookingSection onClose={() => setIsBookingOpen(false)} />
       )}
-      
       <InteriorGallery />
       <CommunitySection />
       <Testimonials />
