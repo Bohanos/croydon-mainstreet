@@ -18,8 +18,7 @@ export default function Navbar({ onBookClick }) {
         <a href="#legacy" className="hover:text-barber-gold transition">Our Legacy</a>
         <a href="#community" className="hover:text-barber-gold transition">Community</a>
         <a href="mailto:bookings@croydoncut.com" className="hover:text-barber-gold transition">Contact</a>
-        
-        {/* Replaced <a> tag with button flow */}
+      
         <a href="#booking">
           <button 
             onClick={onBookClick}
