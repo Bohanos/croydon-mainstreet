@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function Hero({ onBookClick }) {
   const precision = "https://res.cloudinary.com/z3qujb2c/image/upload/v1784424106/precision_ld6xp1.jpg";
 
   return (
@@ -10,13 +10,14 @@ export default function Hero() {
           Blending 25 years of tradition with modern precision. Experience the Croydon legacy.
         </p>
         <div>
-          <a 
-            href="https://forms.gle/xXEX1ASTWkVGBqhX8" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-barber-gold px-8 py-4 text-barber-black font-bold uppercase tracking-widest hover:bg-white transition"
-          >
-            Secure Your Seat
+          {/* Updated: Changed from a link to a button that calls onBookClick */}
+          <a href="#booking">
+            <button 
+              onClick={onBookClick}
+              className="inline-block bg-barber-gold px-8 py-4 text-barber-black font-bold uppercase tracking-widest hover:bg-white transition cursor-pointer"
+            >
+              Secure Your Seat
+            </button>
           </a>
         </div>
       </div>

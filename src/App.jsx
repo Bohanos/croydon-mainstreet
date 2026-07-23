@@ -8,15 +8,26 @@ import CommunitySection from './components/CommunitySection';
 import Testimonials from './components/Testimonials';
 import BookingSection from './components/BookingSection';
 import Footer from './components/Footer';
+
 export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+
   return (
     <main>
       <Navbar />
-      <Hero />
+      
+      {/* Pass the toggle function to the Hero component */}
+      <Hero onBookClick={() => setIsBookingOpen(true)} />
+      
       <CraftsmanPromise />
+      
       <ServicesGrid onBookClick={() => setIsBookingOpen(true)} />
-      {isBookingOpen && <BookingSection />}
+      
+      {/* Conditionally render the BookingSection */}
+      {isBookingOpen && (
+        <BookingSection onClose={() => setIsBookingOpen(false)} />
+      )}
+      
       <InteriorGallery />
       <CommunitySection />
       <Testimonials />
